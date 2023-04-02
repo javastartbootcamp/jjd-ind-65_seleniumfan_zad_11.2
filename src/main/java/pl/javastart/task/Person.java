@@ -11,13 +11,9 @@ public class Person {
     private static final int MIN_NUMBER_OF_SIGNS = 2;
 
     public Person(String firstName, String lastName, int age, String pesel) {
-        checkFirstName(firstName);
-        checkLastName(lastName);
-        checkAge(age);
-
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
+        setFirstName(firstName);
+        setLastName(lastName);
+        setAge(age);
         this.pesel = pesel;
     }
 
